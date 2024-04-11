@@ -1,0 +1,122 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: rgb(0, 0, 57);
+    color: white; */
+}
+
+main{
+    position: relative;
+    padding: 3rem;
+}
+
+main > * {
+    margin-bottom: 2rem;
+}
+
+
+
+div.box{
+    position: relative;
+    background-color: red;
+    height: 300px;
+    width: 400px;
+}
+
+div.box-blue,
+div.box-blue-alt
+{
+    display: inline-block;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    position: relative;
+}
+
+
+div.small-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    height: 80px;
+    width: 80px;
+}
+
+div.p-right{
+    left: auto;
+    right: 0;
+}
+
+div.p-bottom{
+    bottom: 0;
+    top: auto;
+}
+
+div.small-green-box{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: green;
+    bottom: 0;
+    left: 100%;
+    top: auto;
+}
+
+div.quad-container > .small-green-box{
+    top: 175px;
+    right: 40px;
+    left: auto;
+}
+
+div.purple-box{
+    height: 180px;
+    width: 180px;
+    position: absolute;
+    top:0;
+    right:0;
+    background-color: #8a2be2;
+}
+
+div.super-box{
+    position: relative;
+    width: 800px;
+    height: 700px;
+    background-color: green;
+}
+
+div.box-blue > div, 
+div.box-blue-alt > div{
+    background-color: red;
+    height: 80px;
+    width: 80px;
+}
+
+div.box-blue > div:first-child{
+    position: absolute;
+    top:0;
+    left:0
+}
+
+div.box-blue > div:nth-child(2){
+    position: absolute;
+    bottom:0;
+    right:0
+}
+
+
+div.box-blue-alt > div:first-child{
+    position: relative;
+    top:0;
+    left:0
+}
+
+div.box-blue-alt > div:nth-child(2){
+    position: relative;
+    left: 20px;
+}
